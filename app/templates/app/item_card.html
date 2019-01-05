@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-3">
+        <p>タイトル</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.name }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>開始日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.start_date }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>終了日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.end_date }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>備考</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.memo|linebreaksbr }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <p>登録日</p>
+    </div>
+    <div class="col-9">
+        <p>{{ item.created_at|date:"Y/m/d G:i:s" }}</p>
+    </div>
+</div>
